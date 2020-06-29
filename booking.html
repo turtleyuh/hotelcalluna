@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="others.css">
+	<meta charset="UTF-8">
+	<title>Booking Room</title>
+	
+	<!--Font Awesome-->
+	<script src="https://kit.fontawesome.com/3f40b51c52.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<header>
+		<nav class="header">
+			<div class="brand"><a href="myhotel.html">Calluna</a></div>
+			<div class="main-menu">
+				<ul class="menu-container">
+					<li class="menu-links "><a  href="about.html">About</a></li>
+					<li class="menu-links"><a class="active" href="rooms.html">Rooms</a></li>
+					<li class="menu-links"><a href="dining.html">Dining</a></li>
+					<li class="menu-links"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="hamburger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main class="form-main">
+		<div class="container">
+		  <form id="form" class="form">
+		    <div class="header2">
+		        <h2>Booking Form</h2>
+		    </div>
+		    
+		    <div class="form-control">
+		      <label>First name <span class="sao">*</span></label>
+		      <input type="text" placeholder="huy6mui" id="firstname">
+		      <i class="fas fa-check-circle"></i>
+		      <i class="fas fa-exclamation-circle"></i>
+		      <small>Error message</small>
+		    </div>
+		      <div class="form-control">
+		      <label>Last name <span class="sao">*</span></label>
+		      <input type="text" placeholder="huy6mui" id="lastname">
+		      <i class="fas fa-check-circle"></i>
+		      <i class="fas fa-exclamation-circle"></i>
+		      <small>Error message</small>
+		    </div>
+		    <div class="form-control">
+		      <label>Email <span class="sao">*</span></label>
+		      <input type="email" placeholder="huy6mui@gmail.com" id="email">
+		      <i class="fas fa-check-circle"></i>
+		      <i class="fas fa-exclamation-circle"></i>
+		      <small>Error message</small>
+		    </div>	    
+		    <div class="form-control">
+		      <label>Phone number <span class="sao">*</span></label>
+		      <input type="tel" placeholder="0000-000-000" id="phonenumber" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+		      <i class="fas fa-check-circle"></i>
+		      <i class="fas fa-exclamation-circle"></i>
+		      <small>Error message</small>
+		    </div>
+		    <div class="form-control">
+				<label for="arrival">Arrival day <span class="sao">*</span></label>
+				<input type="date" name="arrival" id="arrival" value="2020-08-20">
+				<small>Error message</small>
+			</div>
+			<div class="form-control">
+				<label for="departure">Departure day <span class="sao">*</span></label>
+				<input type="date" name="departure" id="departure" value="2020-08-25"> 
+				<small>Error message</small>
+			</div>
+			<div>
+				<p>Children</p>
+				<input type="radio" name="children" checked="checked">
+				<label for="child"> No</label>
+				<input type="radio" name="children">
+				<label for="child"> Yes</label>
+			</div>
+			<div>
+				<p>Free pickup?</p>
+				<span>
+					<input type="radio" name="pickup" checked="checked">
+					<label for="pickup"> No, thanks - I'll make my own way there</label>
+				</span>
+				<br>
+				<span>
+					<input type="radio" name="pickup">
+					<label for="pickup"> Yes, please! - Pick up me on arrival</label>
+				</span>
+			</div>
+			<div class="form-control flight">
+				<label for="flight">Flight number( Pickup required)</label>
+				<input type="text">
+			</div>
+		    <button>Submit</button>
+		  </form>
+		</div>
+		<script src="./bookingform.js" type="text/javascript"></script>
+	</main>
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="address">
+				<p>Address: Lorem ipsum dolor sit amet, consectetur.</p>
+				<p>Email: Loremipsum@gmail.com</p>
+				<p>Hotline: 111-222-4444</p>
+			</div>
+			<label class="copyright">&copy; Grand Hotel Tequila</label>
+			<div class="follow">
+				<h3>Follow us on</h3>
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-youtube"></i>
+				<i class="fab fa-twitter"></i>
+			</div>
+		</div>
+	</footer>
+<script src="./burgermenu.js" type="text/javascript"></script>
+</body>
+</html>

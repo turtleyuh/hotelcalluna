@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="main_hotel.css">
+	<meta charset="UTF-8">
+	<title>Myhotel</title>
+	
+	<!--Font Awesome-->
+	<script src="https://kit.fontawesome.com/3f40b51c52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="brand"><a href="myhotel.html">Calluna</a></div>
+			<div class="main-menu">
+				<ul class="menu-container">
+					<li class="menu-links"><a href="about.html">About</a></li>
+					<li class="menu-links"><a href="rooms.html">Rooms</a></li>
+					<li class="menu-links"><a href="dining.html">Dining</a></li>
+					<li class="menu-links"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="hamburger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="booking">
+				<div class="welcome">Welcome to Calluna</div>
+				<div class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales pulvinar metus in cursus</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<form class="form wrapper" id="form">
+				<span>
+					<label for="arrival">Arrival</label>
+					<input name="arrival" type="date" value="2020-02-20">
+				</span>
+				<span>
+					<label for="departure">Departure</label>
+					<input name="departure" type="date" value="2020-02-22">
+				</span>
+				<button onclick="bookalert()">Check availability</button>
+				<script>
+					function bookalert(){
+						alert(" There's no room available");
+					}
+				</script>
+			</form>
+		</footer>
+	</div>
+<script src="./burgermenu.js" type="text/javascript"></script>
+</body>
+</html>
